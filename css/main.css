@@ -1,0 +1,130 @@
+.grid {
+  max-width: 996px;
+  margin: 20px auto 10px auto;
+  display: block;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 322px;
+  height: auto;
+  float: left;
+  margin-bottom: 10px;
+  padding:0px 4.5px;
+    padding: 15px;
+}
+.grid-item--width2 { width:322px;height: auto; margin-right: 9px; border: 1px solid #eee;}
+.grid-item--width3 { width: 652px; height: auto; margin-right: 9px;border: 1px solid #eee;}
+.grid-item--width4 { width: 986px; height: auto; margin-right: 9px;border: 1px solid #eee;}
+
+.grid-item--height2 { height: 490px; }
+.grid-item--height3 { height: 350px; }
+.grid-item--height4 { height: 800px; }
+
+*{
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-inverse {
+    background-color: #5a6574;
+    border-color: #5a6574;
+    border-radius: 0px;
+}
+#navbar {
+    float: right; 
+}
+#navbar a {
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: #2c82be;
+}
+#navbar a:hover {
+
+     background-color: #2c82be;
+}
+
+a{
+    outline: none !important;
+}
+.navbar-brand {
+    height: auto;
+    float: none;
+}
+.navbar-brad img{
+    width: 190px;
+    height: auto;
+    display: block;
+}
+.contact{
+    padding: 
+}
+small{
+    color: #a2a6ad;
+    font-size: 75%;
+}
+a small{
+    color:#2c82be;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fa{
+    padding: 0px 10px;
+}
+.planUno p span {
+    color: #75defb;
+    font-size: 150%;
+    padding-right: 5px;
+}
+.disp{
+  width: 10px;
+  height: 10px;
+  background-color: #75c8f6;
+    border-radius: 50%;
+}
+.disp span{
+    padding-left: 15px;
+}
+.ovalGray{
+    width: 20px;
+    height: 20px;
+    background-color: #515151;
+    border-radius: 50%;
+    position: absolute;
+}
+.padLeft{
+    padding-left: 40px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+     .grid-item--height2, .grid-item--height3, .grid-item--height4 {
+            height: auto;
+        }   
+}
+@media only screen and (max-width: 768px) {
+    #navbar {
+        float:none;
+    }
+    grid {
+      max-width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 514px) {
+  .grid-item--width2 { width:100%; }
+  .grid-item--width3 { width: 100%; }
+  .grid-item--width4 { width: 100%; }
+}
